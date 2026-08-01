@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="User listing app logo">
+  <rect width="160" height="160" rx="32" fill="#0f172a"/>
+  <circle cx="80" cy="60" r="28" fill="#38bdf8"/>
+  <path d="M46 126c4-20 19-32 34-32s30 12 34 32" fill="#f8fafc"/>
+  <rect x="44" y="28" width="72" height="18" rx="9" fill="#f59e0b"/>
+  <rect x="44" y="52" width="56" height="10" rx="5" fill="#34d399"/>
+</svg>

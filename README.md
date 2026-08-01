@@ -1,6 +1,17 @@
-# user-listing-app
+<p align="center">
+  <img src="./contact-list.png" alt="user-listing-app logo" width="96" height="96" />
+</p>
 
-A simple Node.js and Express application for managing users in a MySQL database. The app provides a basic CRUD workflow with EJS views for viewing, creating, editing, and deleting users.
+<h1 align="center">user-listing-app</h1>
+
+<p align="center"><i>A lightweight Node.js and Express app for managing users with a MySQL database.</i></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-18%2B-FBBF24?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-4.x-3B82F6?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+  <img src="https://img.shields.io/badge/MySQL-8.x-DC2626?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/License-ISC-2563EB?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" />
+</p>
 
 ## Table of Contents
 
@@ -41,22 +52,41 @@ user-listing-app/
 
 ## 🔧 Features
 
-- Home page shows the total user count
-- User listing page displays user details
-- Form-based user creation
-- Password-verified update flow for changing usernames
-- Password-verified delete flow for removing users
-- New users are assigned a UUID value
+| Feature | Status | Description |
+| --- | :---: | --- |
+| Home overview | ✅ Current | Displays the total number of users on the landing page. |
+| User listing | ✅ Current | Shows all stored users in a clear table view. |
+| Create user | ✅ Current | Provides a form to add a new user to the database. |
+| Edit user | ✅ Current | Allows updating an existing username after password verification. |
+| Delete user | ✅ Current | Supports secure removal of a user after password verification. |
+| Unique IDs | ✅ Current | Assigns each new user a UUID for identification. |
+
+### Workflow
+
+```mermaid
+flowchart TD
+    A[Open app] --> B[View home page]
+    B --> C[See total users]
+    B --> D[Open user list]
+    D --> E[Create user]
+    D --> F[Edit user]
+    D --> G[Delete user]
+    E --> H[Save to MySQL]
+    F --> H
+    G --> H
+    H --> I[Refresh user list]
+```
 
 ## 🧰 Tech stack
 
-- Node.js
-- Express.js
-- EJS
-- MySQL2
-- method-override
-- uuid
-- @faker-js/faker
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Templates:** EJS
+- **Database client:** MySQL2
+- **Request override:** method-override
+- **Unique IDs:** uuid
+- **Seed/demo data:** @faker-js/faker
+- **Development helper:** nodemon
 
 ## ⚙️ Install methods
 
